@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACGN創作者列表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        th {
+            background-color: #2a2a2a;
+        }
+        .tag {
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+        .bilibili {
+            background-color: #00a1d6;
+        }
+        .youtube {
+            background-color: #ff0000;
+        }
+        .continue {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-    <h1>Hello, World!</h1>
-    <h1>A</h1>
-    <h2>B</h2>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>名稱</th>
+                <th>Tags</th>
+                <th>連結</th>
+                <th>訂閱數</th>
+                <th>Last edited time</th>
+                <th>Other</th>
+                <th>狀態</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>泛式</td>
+                <td>
+                    <span class="tag bilibili">BiliBili</span>
+                    <span class="tag youtube">Youtube</span>
+                </td>
+                <td>space.bilibili.com/282994</td>
+                <td>5856000<br>264000</td>
+                <td>June 17, 2024 5:48 AM</td>
+                <td>YT</td>
+                <td><button class="continue">Continue</button></td>
+            </tr>
+            <tr>
+                <td>瓶子君152</td>
+                <td><span class="tag bilibili">BiliBili</span></td>
+                <td>space.bilibili.com/730732</td>
+                <td>3983000</td>
+                <td>May 18, 2024 6:39 AM</td>
+                <td></td>
+                <td><button class="continue">Continue</button></td>
+            </tr>
+            <!-- 添加更多行... -->
+        </tbody>
+    </table>
 </body>
 </html>
